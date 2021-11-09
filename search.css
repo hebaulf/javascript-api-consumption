@@ -1,0 +1,13 @@
+#search {
+  width: 50%;
+}
+
+#results {
+  height: 100%;
+  width: 100%;
+  max-width: 400px;
+  max-height: 70vh;
+  line-height: 1.5;
+  border: 1px solid gray;
+  overflow-y: scroll;
+}

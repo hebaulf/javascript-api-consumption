@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API - patch</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <form onsubmit="return false">
+        ID to patch: <input type="text" value="3687b88d-79d0-4ca1-aa67-7a2b6c0ae039"> <br>
+        New name: <input type="text" name="item_name" placeholder="new item name">
+        <button id="cta" onclick="update_item()">Update Item</button>
+    </form>
+
+    <script>
+        async function update_item(){
+            const form = event.target.form;
+            console.log(form);
+            const conn = await fetch("https://coderspage.com/iceland/item/639be078-1ff3-4eef-b24a-6424af2f1531", {
+                method : "PATCH",
+                headers : {
+                    'Access-Control-Allow-Origin' : '*'
+                },
+                body : new FormData(form)     
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <a href="https://google.com" onclick="return false">Take me to Google</a><br>
+    <br>
+
+    <form action="https://ecuaguia.com/iceland/api-log-in.php" onsubmit="login(); return false;">
+        <input type="text" name="user_name" placeholder="user name">
+        <input type="password" name="password" placeholder="password">
+        <button>Log in</button>
+    </form>
+
+    <script>
+        async function login() {
+            // Get the form
+            const form = event.target;
+            // console.log(form);
+            // connect to the api
+            const conn = await fetch('https://ecuaguia.com/iceland/api-log-in.php', {
+                method : "POST", 
+                // send data to api (user_name and password)
+                body : new FormData(form)
+            });
+            // get response back
+            const response = await conn.json();
+            console.log(response);
+
+            // if response is an error show an error to the user
+            if(!conn.ok) {
+                alert('Sorry, you are not logged in')
+                return // stop here, do not continue reading the code
+            }
+            // if response is ok then show something nice to the user
+            alert('Great');
+        }
+    </script>
+
+</body>
+</html>

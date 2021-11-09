@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Screen Color</title>
+  <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background: black;
+        }
+  </style>
+</head>
+<body>
+  
+    <script>
+        async function get_color(){
+        const conn = await fetch("https://coderspage.com/get-color")
+        const color = await conn.text()
+        console.log(color)
+        document.querySelector("body").style.background = color
+        }
+        setInterval(get_color, 2000)
+    </script>
+
+</body>
+</html>
