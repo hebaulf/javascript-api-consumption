@@ -8,10 +8,10 @@ I made a file with details about each topic of the guide.
 Here you can see the live pages of the project.  
 Although some are not working as they were when I was in the class. (e.g. patch.html)
 
-[Link to index file](https://hebaulf.github.io/javascript-api-consumption/index.html).<br>
-[Link to items file](https://hebaulf.github.io/javascript-api-consumption/items.html).<br>
-[Link to patch file](https://hebaulf.github.io/javascript-api-consumption/patch.html).<br>
-[Link to screen file](https://hebaulf.github.io/javascript-api-consumption/screen.html).<br>
+[Live link to index file](https://hebaulf.github.io/javascript-api-consumption/index.html).<br>
+[Live link to items file](https://hebaulf.github.io/javascript-api-consumption/items.html).<br>
+[Live link to patch file](https://hebaulf.github.io/javascript-api-consumption/patch.html).<br>
+[Live link to screen file](https://hebaulf.github.io/javascript-api-consumption/screen.html).<br>
 <br>
 P.s. The screen.html link does not show much because the project needs Postman to change the color of the background.
 <br>
