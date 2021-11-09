@@ -2,9 +2,17 @@
 
 This is the project we did in Santiagos workshop.  
 I made a file with details about each topic of the guide.
-
 [Link to file about topics](https://docs.google.com/document/d/15-qyKJ8jQTLQKboxJNDLl7uOfRXnnmdRlDTny9UoNmg/edit?usp=sharing).
 <br>
+<br>
+Here you can see the live pages of the project.
+Although some are not working as they were when I was in the class. (e.g. patch.html)
+
+[Link to index file](https://hebaulf.github.io/javascript-api-consumption/index.html).<br>
+[Link to items file](https://hebaulf.github.io/javascript-api-consumption/items.html).<br>
+[Link to patch file](https://hebaulf.github.io/javascript-api-consumption/patch.html).<br>
+[Link to screen file](https://hebaulf.github.io/javascript-api-consumption/screen.html).<br>
+The screen.html link does not show much because the project needs Postman to change the color of the background.
 <br>
 
 And here below is what I learnt -->
