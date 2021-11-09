@@ -1,4 +1,4 @@
-# javascript-api-consumption
+# JavaScript - API Consumption
 
 This is the project we did in Santiagos workshop.  
 I made a file with details about each topic of the guide.
